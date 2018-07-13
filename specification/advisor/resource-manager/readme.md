@@ -29,15 +29,15 @@ openapi-type: arm
 tag: package-2019-05
 ```
 
-
 ### Tag: package-2019-05
 
 These settings apply only when `--tag=package-2019-05` is specified on the command line.
 
-```yaml $(tag) == 'package-2019-05'
+``` yaml $(tag) == 'package-2019-05'
 input-file:
   - Microsoft.Advisor/stable/2019-05-20/advisor.json
 ```
+
 ### Tag: package-2017-04
 
 These settings apply only when `--tag=package-2017-04` is specified on the command line.
@@ -172,4 +172,14 @@ java:
   license-header: MICROSOFT_MIT_NO_CODEGEN
   payload-flattening-threshold: 1
   output-folder: $(azure-libraries-for-java-folder)/azure-mgmt-advisor
+```
+
+## Suppression
+
+``` yaml
+directive:
+  - where: '$.paths["/subscriptions/{subscriptionId}/providers/Microsoft.Advisor/generateRecommendations"].post.operationId'
+    from: advisor.json
+    suppress: PostOperationIdContainsUrlVerb
+    reason: test supression
 ```
