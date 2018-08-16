@@ -4,10 +4,10 @@
 
 This is the AutoRest configuration file for ResourceHealth.
 
-
-
 ---
+
 ## Getting Started
+
 To build the SDK for ResourceHealth, simply [Install AutoRest](https://aka.ms/autorest/install) and in this folder, run:
 
 > `autorest`
@@ -15,21 +15,29 @@ To build the SDK for ResourceHealth, simply [Install AutoRest](https://aka.ms/au
 To see additional help and options, run:
 
 > `autorest --help`
+
 ---
 
 ## Configuration
 
-
-
 ### Basic Information
+
 These are the global settings for the ResourceHealth API.
 
 ``` yaml
 openapi-type: arm
-tag: package-2017-07
+tag: package-2222-02
 ```
 
 
+### Tag: package-2222-02
+
+These settings apply only when `--tag=package-2222-02` is specified on the command line.
+
+```yaml $(tag) == 'package-2222-02'
+input-file:
+  - Microsoft.ResourceHealth/stable/2222-02-01/resourcehealth.json
+```
 ### Tag: package-2017-07
 
 These settings apply only when `--tag=package-2017-07` is specified on the command line.
@@ -38,7 +46,6 @@ These settings apply only when `--tag=package-2017-07` is specified on the comma
 input-file:
 - Microsoft.ResourceHealth/stable/2017-07-01/resourcehealth.json
 ```
-
 
 ### Tag: package-2015-01
 
@@ -49,10 +56,9 @@ input-file:
 - Microsoft.ResourceHealth/stable/2015-01-01/resourcehealth.json
 ```
 
-
 ---
-# Code Generation
 
+# Code Generation
 
 ## Swagger to SDK
 
@@ -64,7 +70,6 @@ swagger-to-sdk:
   - repo: azure-sdk-for-go
   - repo: azure-sdk-for-node
 ```
-
 
 ## Go
 
@@ -103,53 +108,17 @@ Please also specify `--go-sdk-folder=<path to the root directory of your azure-s
 output-folder: $(go-sdk-folder)/services/resourcehealth/mgmt/2015-01-01/resourcehealth
 ```
 
-
 ## Java
 
 These settings apply only when `--java` is specified on the command line.
 Please also specify `--azure-libraries-for-java-folder=<path to the root directory of your azure-libraries-for-java clone>`.
 
 ``` yaml $(java)
-azure-arm: true
-fluent: true
-namespace: com.microsoft.azure.management.resourcehealth
-license-header: MICROSOFT_MIT_NO_CODEGEN
-payload-flattening-threshold: 1
-output-folder: $(azure-libraries-for-java-folder)/azure-mgmt-resourcehealth
-```
-
-### Java multi-api
-
-``` yaml $(java) && $(multiapi)
-batch:
-  - tag: package-2017-07
-  - tag: package-2015-01
-```
-
-### Tag: package-2017-07 and java
-
-These settings apply only when `--tag=package-2017-07 --java` is specified on the command line.
-Please also specify `--azure-libraries-for-java=<path to the root directory of your azure-sdk-for-java clone>`.
-
-``` yaml $(tag) == 'package-2017-07' && $(java) && $(multiapi)
 java:
-  namespace: com.microsoft.azure.management.resourcehealth.v2017_07_01
-  output-folder: $(azure-libraries-for-java-folder)/resourcehealth/resource-manager/v2017_07_01
-regenerate-manager: true
-generate-interface: true
+  azure-arm: true
+  fluent: true
+  namespace: com.microsoft.azure.management.resourcehealth
+  license-header: MICROSOFT_MIT_NO_CODEGEN
+  payload-flattening-threshold: 1
+  output-folder: $(azure-libraries-for-java-folder)/azure-mgmt-resourcehealth
 ```
-
-### Tag: package-2015-01 and java
-
-These settings apply only when `--tag=package-2015-01 --java` is specified on the command line.
-Please also specify `--azure-libraries-for-java=<path to the root directory of your azure-sdk-for-java clone>`.
-
-``` yaml $(tag) == 'package-2015-01' && $(java) && $(multiapi)
-java:
-  namespace: com.microsoft.azure.management.resourcehealth.v2015_01_01
-  output-folder: $(azure-libraries-for-java-folder)/resourcehealth/resource-manager/v2015_01_01
-regenerate-manager: true
-generate-interface: true
-```
-
-
