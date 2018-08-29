@@ -3,7 +3,7 @@
   "info": {
     "title": "Service Fabric Client APIs",
     "description": "Service Fabric REST Client APIs allows management of Service Fabric clusters, applications and services.",
-    "version": "6.2.0.9"
+    "version": "16.1.0.9"
   },
   "host": "localhost:19080",
   "schemes": [
@@ -1210,7 +1210,7 @@
         ],
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/ProvisionApplicationTypeDescriptionBaseRequiredBodyParam"
@@ -4180,7 +4180,7 @@
         ],
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/NodeNameRequiredPathParam"
@@ -4249,7 +4249,7 @@
         ],
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/NodeNameRequiredPathParam"
@@ -4503,7 +4503,7 @@
         "description": "Get the status of Chaos indicating whether or not Chaos is running, the Chaos parameters used for running Chaos and the status of the Chaos Schedule.",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -4601,7 +4601,7 @@
         },
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/ContinuationTokenOptionalQueryParam"
@@ -4645,7 +4645,7 @@
         "description": "Gets the version of the Chaos Schedule in use and the Chaos Schedule that defines when and how to run Chaos.",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1_RequiredQueryParam"
           }
         ],
         "tags": [
@@ -4672,7 +4672,7 @@
         "description": "Set the Chaos Schedule currently in use by Chaos. Chaos will automatically schedule runs based on the Chaos Schedule.\nThe version in the provided input schedule must match the version of the Chaos Schedule on the server.\nIf the version provided does not match the version on the server, the Chaos Schedule is not updated.\nIf the version provided matches the version on the server, then the Chaos Schedule is updated and the version of the Chaos Schedule on the server is incremented up by one and wraps back to 0 after 2,147,483,647.\nIf Chaos is running when this call is made, the call will fail.",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/ChaosScheduleRequiredBodyParam"
@@ -4736,7 +4736,7 @@
         },
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/ImageStoreContentPathRequiredPathParam"
@@ -5572,7 +5572,7 @@
             "$ref": "#/parameters/BackupPolicyDescriptionRequiredBodyParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -5609,7 +5609,7 @@
             "$ref": "#/parameters/BackupPolicyNameRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -5646,7 +5646,7 @@
         },
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/ContinuationTokenOptionalQueryParam"
@@ -5692,7 +5692,7 @@
             "$ref": "#/parameters/BackupPolicyNameRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -5735,7 +5735,7 @@
             "$ref": "#/parameters/BackupPolicyNameRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/ContinuationTokenOptionalQueryParam"
@@ -5784,7 +5784,7 @@
             "$ref": "#/parameters/BackupPolicyNameRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -5824,7 +5824,7 @@
             "$ref": "#/parameters/EnableBackupDescriptionRequiredBodyParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -5861,7 +5861,7 @@
             "$ref": "#/parameters/ApplicationIdRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -5901,7 +5901,7 @@
             "$ref": "#/parameters/ApplicationIdRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/ContinuationTokenOptionalQueryParam"
@@ -5956,7 +5956,7 @@
             "$ref": "#/parameters/ApplicationIdRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -6014,7 +6014,7 @@
             "$ref": "#/parameters/ApplicationIdRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -6051,7 +6051,7 @@
             "$ref": "#/parameters/ApplicationIdRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -6088,7 +6088,7 @@
             "$ref": "#/parameters/EnableBackupDescriptionRequiredBodyParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -6125,7 +6125,7 @@
             "$ref": "#/parameters/ServiceIdRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -6165,7 +6165,7 @@
             "$ref": "#/parameters/ServiceIdRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/ContinuationTokenOptionalQueryParam"
@@ -6220,7 +6220,7 @@
             "$ref": "#/parameters/ServiceIdRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -6278,7 +6278,7 @@
             "$ref": "#/parameters/ServiceIdRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -6315,7 +6315,7 @@
             "$ref": "#/parameters/ServiceIdRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -6352,7 +6352,7 @@
             "$ref": "#/parameters/EnableBackupDescriptionRequiredBodyParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -6389,7 +6389,7 @@
             "$ref": "#/parameters/PartitionIdRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -6426,7 +6426,7 @@
             "$ref": "#/parameters/PartitionIdRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -6475,7 +6475,7 @@
             "$ref": "#/parameters/PartitionIdRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -6527,7 +6527,7 @@
             "$ref": "#/parameters/PartitionIdRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -6564,7 +6564,7 @@
             "$ref": "#/parameters/PartitionIdRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -6613,7 +6613,7 @@
             "$ref": "#/parameters/BackupTimeoutOptionalQueryParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -6647,7 +6647,7 @@
             "$ref": "#/parameters/PartitionIdRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -6693,7 +6693,7 @@
             "$ref": "#/parameters/RestoreTimeoutOptionalQueryParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -6730,7 +6730,7 @@
             "$ref": "#/parameters/PartitionIdRequiredPathParam"
           },
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -6770,7 +6770,7 @@
         },
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -7180,7 +7180,7 @@
         "operationId": "GetClusterEventList",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -7232,7 +7232,7 @@
         "operationId": "GetContainersEventList",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -7279,7 +7279,7 @@
         "operationId": "GetNodeEventList",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/NodeNameRequiredPathParam"
@@ -7334,7 +7334,7 @@
         "operationId": "GetNodesEventList",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -7386,7 +7386,7 @@
         "operationId": "GetApplicationEventList",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/ApplicationIdRequiredPathParam"
@@ -7441,7 +7441,7 @@
         "operationId": "GetApplicationsEventList",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -7493,7 +7493,7 @@
         "operationId": "GetServiceEventList",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/ServiceIdRequiredPathParam"
@@ -7548,7 +7548,7 @@
         "operationId": "GetServicesEventList",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -7600,7 +7600,7 @@
         "operationId": "GetPartitionEventList",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/PartitionIdRequiredPathParam"
@@ -7655,7 +7655,7 @@
         "operationId": "GetPartitionsEventList",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/TimeoutOptionalQueryParam"
@@ -7707,7 +7707,7 @@
         "operationId": "GetPartitionReplicaEventList",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/PartitionIdRequiredPathParam"
@@ -7765,7 +7765,7 @@
         "operationId": "GetPartitionReplicasEventList",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/PartitionIdRequiredPathParam"
@@ -7820,7 +7820,7 @@
         "operationId": "GetCorrelatedEventList",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersion_6-2-Preview_RequiredQueryParam"
+            "$ref": "#/parameters/ApiVersion_16.1-Preview_RequiredQueryParam"
           },
           {
             "$ref": "#/parameters/EventInstanceIdRequiredPathParam"
@@ -8626,7 +8626,7 @@
         },
         "UpgradeReplicaSetCheckTimeoutInSeconds": {
           "$ref": "#/definitions/UpgradeReplicaSetCheckTimeout",
-          "description": "The maximum amount of time to block processing of an upgrade domain and prevent loss of availability when there are unexpected issues. When this timeout expires, processing of the upgrade domain will proceed regardless of availability loss issues. The timeout is reset at the start of each upgrade domain. Valid values are between 0 and 42949672925 inclusive. (unsigned 32-bit integer)."
+          "description": "The maximum amount of time to block processing of an upgrade domain and prevent loss of availability when there are unexpected issues. When this timeout expires, processing of the upgrade domain will proceed regardless of availability loss issues. The timeout is reset at the start of each upgrade domain. Valid values are between 0 and 4294916.1925 inclusive. (unsigned 32-bit integer)."
         },
         "ForceRestart": {
           "$ref": "#/definitions/ForceRestart",
@@ -11929,7 +11929,7 @@
         },
         "UpgradeReplicaSetCheckTimeoutInSeconds": {
           "$ref": "#/definitions/UpgradeReplicaSetCheckTimeout",
-          "description": "The maximum amount of time to block processing of an upgrade domain and prevent loss of availability when there are unexpected issues. When this timeout expires, processing of the upgrade domain will proceed regardless of availability loss issues. The timeout is reset at the start of each upgrade domain. Valid values are between 0 and 42949672925 inclusive. (unsigned 32-bit integer)."
+          "description": "The maximum amount of time to block processing of an upgrade domain and prevent loss of availability when there are unexpected issues. When this timeout expires, processing of the upgrade domain will proceed regardless of availability loss issues. The timeout is reset at the start of each upgrade domain. Valid values are between 0 and 4294916.1925 inclusive. (unsigned 32-bit integer)."
         },
         "ForceRestart": {
           "$ref": "#/definitions/ForceRestart",
@@ -13741,8 +13741,8 @@
     "UpgradeReplicaSetCheckTimeout": {
       "type": "integer",
       "format": "int64",
-      "description": "The maximum amount of time to block processing of an upgrade domain and prevent loss of availability when there are unexpected issues. When this timeout expires, processing of the upgrade domain will proceed regardless of availability loss issues. The timeout is reset at the start of each upgrade domain. Valid values are between 0 and 42949672925 inclusive. (unsigned 32-bit integer).",
-      "default": 42949672925
+      "description": "The maximum amount of time to block processing of an upgrade domain and prevent loss of availability when there are unexpected issues. When this timeout expires, processing of the upgrade domain will proceed regardless of availability loss issues. The timeout is reset at the start of each upgrade domain. Valid values are between 0 and 4294916.1925 inclusive. (unsigned 32-bit integer).",
+      "default": 4294916.1925
     },
     "UpgradeState": {
       "type": "string",
@@ -13964,7 +13964,7 @@
         },
         "UpgradeReplicaSetCheckTimeoutInSeconds": {
           "$ref": "#/definitions/UpgradeReplicaSetCheckTimeout",
-          "description": "The maximum amount of time to block processing of an upgrade domain and prevent loss of availability when there are unexpected issues. When this timeout expires, processing of the upgrade domain will proceed regardless of availability loss issues. The timeout is reset at the start of each upgrade domain. Valid values are between 0 and 42949672925 inclusive. (unsigned 32-bit integer)."
+          "description": "The maximum amount of time to block processing of an upgrade domain and prevent loss of availability when there are unexpected issues. When this timeout expires, processing of the upgrade domain will proceed regardless of availability loss issues. The timeout is reset at the start of each upgrade domain. Valid values are between 0 and 4294916.1925 inclusive. (unsigned 32-bit integer)."
         },
         "ForceRestart": {
           "$ref": "#/definitions/ForceRestart",
@@ -14574,7 +14574,7 @@
         "TimeToRunInSeconds": {
           "type": "string",
           "description": "Total time (in seconds) for which Chaos will run before automatically stopping. The maximum allowed value is 4,294,967,295 (System.UInt32.MaxValue).",
-          "default": "4294967295"
+          "default": "4294916.195"
         },
         "MaxClusterStabilizationTimeoutInSeconds": {
           "type": "integer",
@@ -14582,7 +14582,7 @@
           "description": "The maximum amount of time to wait for all cluster entities to become stable and healthy. Chaos executes in iterations and at the start of each iteration it validates the health of cluster entities.\nDuring validation if a cluster entity is not stable and healthy within MaxClusterStabilizationTimeoutInSeconds, Chaos generates a validation failed event.",
           "default": 60,
           "minimum": 0,
-          "maximum": 4294967295
+          "maximum": 4294916.195
         },
         "MaxConcurrentFaults": {
           "type": "integer",
@@ -14590,7 +14590,7 @@
           "description": "MaxConcurrentFaults is the maximum number of concurrent faults induced per iteration.\nChaos executes in iterations and two consecutive iterations are separated by a validation phase.\nThe higher the concurrency, the more aggressive the injection of faults -- inducing more complex series of states to uncover bugs.\nThe recommendation is to start with a value of 2 or 3 and to exercise caution while moving up.",
           "default": 1,
           "minimum": 0,
-          "maximum": 4294967295
+          "maximum": 4294916.195
         },
         "EnableMoveReplicaFaults": {
           "type": "boolean",
@@ -14603,7 +14603,7 @@
           "description": "Wait time (in seconds) between consecutive faults within a single iteration.\nThe larger the value, the lower the overlapping between faults and the simpler the sequence of state transitions that the cluster goes through.\nThe recommendation is to start with a value between 1 and 5 and exercise caution while moving up.",
           "default": 20,
           "minimum": 0,
-          "maximum": 4294967295
+          "maximum": 4294916.195
         },
         "WaitTimeBetweenIterationsInSeconds": {
           "type": "integer",
@@ -14611,7 +14611,7 @@
           "description": "Time-separation (in seconds) between two consecutive iterations of Chaos.\nThe larger the value, the lower the fault injection rate.",
           "default": 30,
           "minimum": 0,
-          "maximum": 4294967295
+          "maximum": 4294916.195
         },
         "ClusterHealthPolicy": {
           "$ref": "#/definitions/ClusterHealthPolicy",
@@ -15214,7 +15214,7 @@
         },
         "UpgradeReplicaSetCheckTimeoutInSeconds": {
           "$ref": "#/definitions/UpgradeReplicaSetCheckTimeout",
-          "description": "The maximum amount of time to block processing of an upgrade domain and prevent loss of availability when there are unexpected issues. When this timeout expires, processing of the upgrade domain will proceed regardless of availability loss issues. The timeout is reset at the start of each upgrade domain. Valid values are between 0 and 42949672925 inclusive. (unsigned 32-bit integer)."
+          "description": "The maximum amount of time to block processing of an upgrade domain and prevent loss of availability when there are unexpected issues. When this timeout expires, processing of the upgrade domain will proceed regardless of availability loss issues. The timeout is reset at the start of each upgrade domain. Valid values are between 0 and 4294916.1925 inclusive. (unsigned 32-bit integer)."
         },
         "ForceRestart": {
           "$ref": "#/definitions/ForceRestart",
@@ -15269,7 +15269,7 @@
         },
         "UpgradeReplicaSetCheckTimeoutInSeconds": {
           "$ref": "#/definitions/UpgradeReplicaSetCheckTimeout",
-          "description": "The maximum amount of time to block processing of an upgrade domain and prevent loss of availability when there are unexpected issues. When this timeout expires, processing of the upgrade domain will proceed regardless of availability loss issues. The timeout is reset at the start of each upgrade domain. Valid values are between 0 and 42949672925 inclusive. (unsigned 32-bit integer)."
+          "description": "The maximum amount of time to block processing of an upgrade domain and prevent loss of availability when there are unexpected issues. When this timeout expires, processing of the upgrade domain will proceed regardless of availability loss issues. The timeout is reset at the start of each upgrade domain. Valid values are between 0 and 4294916.1925 inclusive. (unsigned 32-bit integer)."
         },
         "MonitoringPolicy": {
           "$ref": "#/definitions/MonitoringPolicyDescription",
@@ -15893,21 +15893,21 @@
           "type": "integer",
           "format": "int64",
           "minimum": 0,
-          "maximum": 4294967295,
+          "maximum": 4294916.195,
           "description": "The duration, in seconds, between when a replica goes down and when a new replica is created."
         },
         "QuorumLossWaitDurationSeconds": {
           "type": "integer",
           "format": "int64",
           "minimum": 0,
-          "maximum": 4294967295,
+          "maximum": 4294916.195,
           "description": "The maximum duration, in seconds, for which a partition is allowed to be in a state of quorum loss."
         },
         "StandByReplicaKeepDurationSeconds": {
           "type": "integer",
           "format": "int64",
           "minimum": 0,
-          "maximum": 4294967295,
+          "maximum": 4294916.195,
           "description": "The definition on how long StandBy replicas should be maintained before being removed."
         }
       }
@@ -17362,7 +17362,7 @@
         },
         "ReplicaSetCheckTimeoutInMilliseconds": {
           "$ref": "#/definitions/UpgradeReplicaSetCheckTimeout",
-          "description": "The maximum amount of time to block processing of an upgrade domain and prevent loss of availability when there are unexpected issues. When this timeout expires, processing of the upgrade domain will proceed regardless of availability loss issues. The timeout is reset at the start of each upgrade domain. Valid values are between 0 and 42949672925 inclusive. (unsigned 32-bit integer)."
+          "description": "The maximum amount of time to block processing of an upgrade domain and prevent loss of availability when there are unexpected issues. When this timeout expires, processing of the upgrade domain will proceed regardless of availability loss issues. The timeout is reset at the start of each upgrade domain. Valid values are between 0 and 4294916.1925 inclusive. (unsigned 32-bit integer)."
         },
         "FailureAction": {
           "$ref": "#/definitions/FailureAction",
@@ -19940,7 +19940,7 @@
           "type": "integer",
           "format": "int64",
           "minimum": 0,
-          "maximum": 4294967295,
+          "maximum": 4294916.195,
           "description": "The period in seconds on which a decision is made whether to scale or not."
         }
       }
@@ -19981,7 +19981,7 @@
           "type": "integer",
           "format": "int64",
           "minimum": 0,
-          "maximum": 4294967295,
+          "maximum": 4294916.195,
           "description": "The period in seconds on which a decision is made whether to scale or not."
         }
       }
@@ -23187,46 +23187,46 @@
         ]
       }
     },
-    "ApiVersion_6-2_RequiredQueryParam": {
+    "ApiVersion_16.1_RequiredQueryParam": {
       "name": "api-version",
       "in": "query",
       "x-ms-parameter-location": "method",
       "type": "string",
       "enum": [
-        "6.2"
+        "16.1"
       ],
       "required": true,
-      "default": "6.2",
-      "description": "The version of the API. This parameter is required and its value must be '6.2'.\n\nService Fabric REST API version is based on the runtime version in which the API was introduced or was changed. Service Fabric runtime supports more than one version of the API. This version is the latest supported version of the API. If a lower API version is passed, the returned response may be different from the one documented in this specification.\n\nAdditionally the runtime accepts any version that is higher than the latest supported version up to the current version of the runtime. So if the latest API version is 6.0 and the runtime is 6.1, the runtime will accept version 6.1 for that API. However the behavior of the API will be as per the documented 6.0 version.",
+      "default": "16.1",
+      "description": "The version of the API. This parameter is required and its value must be '16.1'.\n\nService Fabric REST API version is based on the runtime version in which the API was introduced or was changed. Service Fabric runtime supports more than one version of the API. This version is the latest supported version of the API. If a lower API version is passed, the returned response may be different from the one documented in this specification.\n\nAdditionally the runtime accepts any version that is higher than the latest supported version up to the current version of the runtime. So if the latest API version is 6.0 and the runtime is 6.1, the runtime will accept version 6.1 for that API. However the behavior of the API will be as per the documented 6.0 version.",
       "x-ms-enum": {
-        "name": "ApiVersion_6-2_RequiredQueryParam",
+        "name": "ApiVersion_16.1_RequiredQueryParam",
         "modelAsString": true,
         "values": [
           {
-            "value": "6.2",
-            "description": "The 6.2 version of the API."
+            "value": "16.1",
+            "description": "The 16.1 version of the API."
           }
         ]
       }
     },
-    "ApiVersion_6-2-Preview_RequiredQueryParam": {
+    "ApiVersion_16.1-Preview_RequiredQueryParam": {
       "name": "api-version",
       "in": "query",
       "x-ms-parameter-location": "method",
       "type": "string",
       "enum": [
-        "6.2-preview"
+        "16.1-preview"
       ],
       "required": true,
-      "default": "6.2-preview",
-      "description": "The version of the API. This parameter is required and its value must be '6.2-preview'.",
+      "default": "16.1-preview",
+      "description": "The version of the API. This parameter is required and its value must be '16.1-preview'.",
       "x-ms-enum": {
-        "name": "ApiVersion_6-2-Preview_RequiredQueryParam",
+        "name": "ApiVersion_16.1-Preview_RequiredQueryParam",
         "modelAsString": true,
         "values": [
           {
-            "value": "6.2-preview",
-            "description": "The version number for the preview functionality of 6.2 runtime"
+            "value": "16.1-preview",
+            "description": "The version number for the preview functionality of 16.1 runtime"
           }
         ]
       }
@@ -24249,7 +24249,7 @@
       "format": "int64",
       "required": false,
       "minimum": 1,
-      "maximum": 4294967295,
+      "maximum": 4294916.195,
       "default": 60,
       "description": "The server timeout for performing the operation in seconds. This timeout specifies the time duration that the client is willing to wait for the requested operation to complete. The default value for this parameter is 60 seconds."
     },

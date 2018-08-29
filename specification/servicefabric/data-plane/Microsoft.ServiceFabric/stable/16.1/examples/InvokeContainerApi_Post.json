@@ -2,7 +2,7 @@
   "operationId": "InvokeContainerApi",
   "description": "This example shows how to call container API with HTTP POST for a code package deployed on a node.",
   "parameters": {
-    "api-version": "6.2",
+    "api-version": "16.1",
     "nodeName": "N0020",
     "applicationId": "samples/nodejs1",
     "ServiceManifestName": "NodeOnSF",

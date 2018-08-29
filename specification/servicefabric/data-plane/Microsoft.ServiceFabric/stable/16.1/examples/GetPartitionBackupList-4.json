@@ -2,7 +2,7 @@
   "operationId": "GetPartitionBackupList",
   "description": "This example shows how to get list of partition backups. The number of results in a page are limited to maximum of two using the MaxResult parameter. This example uses the ContinuationToken parameter. The value of this parameter is provided from the previous query; in this case the example shown above. The response contains the remaining results and an empty ContinuationToken. The empty ContinuationToken indicates that additional results are not available.",
   "parameters": {
-    "api-version": "6.2-preview",
+    "api-version": "16.1-preview",
     "partitionId": "1daae3f5-7fd6-42e9-b1ba-8c05f873994d",
     "MaxResults": 2,
     "ContinuationToken": "fabric:/CalcApp/CalcService#1daae3f5-7fd6-42e9-b1ba-8c05f873994d#7903dc2a-228d-44b0-b7c8-a13a6c9b46bd"
@@ -15,8 +15,8 @@
         "ContinuationToken": "",
         "Items": [ 
           {
-            "BackupId": "be06a49c-be67-4eb1-a602-b983605be862",
-            "BackupChainId": "be06a49c-be67-4eb1-a602-b983605be862",
+            "BackupId": "be06a49c-be67-4eb1-a16.1-b983605be862",
+            "BackupChainId": "be06a49c-be67-4eb1-a16.1-b983605be862",
             "ApplicationName": "fabric:/CalcApp",
             "ServiceName": "fabric:/CalcApp/CalcService",
             "PartitionInformation": {

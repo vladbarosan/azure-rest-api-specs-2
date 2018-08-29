@@ -2,7 +2,7 @@
   "operationId": "CreateBackupPolicy",
   "description": "This example shows how to create a backup policy which takes backup every 10 minutes with file share as the backup location.",
   "parameters": {
-    "api-version": "6.2-preview",
+    "api-version": "16.1-preview",
     "BackupPolicyDescription": {
       "Name": "FileShare10MinBackupPolicy",
       "AutoRestoreOnDataLoss": false,

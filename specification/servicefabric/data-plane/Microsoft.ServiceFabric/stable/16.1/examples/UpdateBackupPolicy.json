@@ -2,7 +2,7 @@
   "operationId": "UpdateBackupPolicy",
   "description": "This example shows how to update the schedule of a backup policy to take backup twice everyday at 9 AM and 5 PM UTC with Azure blob store as the backup location.",
   "parameters": {
-    "api-version": "6.2-preview",
+    "api-version": "16.1-preview",
     "backupPolicyName": "DailyAzureBackupPolicy",
     "BackupPolicyDescription": {
       "Name": "DailyAzureBackupPolicy",

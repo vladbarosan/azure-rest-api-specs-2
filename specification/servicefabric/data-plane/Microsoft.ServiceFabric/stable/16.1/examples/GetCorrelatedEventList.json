@@ -3,7 +3,7 @@
   "description": "This example shows how to get all correlated events for a given eventInstanceId.",
   "parameters": {
     "eventInstanceId": "e00fa5b7-f747-40dd-9e09-f5a031e96de4",
-    "api-version": "6.2-preview"
+    "api-version": "16.1-preview"
   },
   "responses": {
     "200": {

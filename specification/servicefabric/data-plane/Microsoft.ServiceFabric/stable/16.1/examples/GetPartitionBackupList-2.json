@@ -2,7 +2,7 @@
   "operationId": "GetPartitionBackupList",
   "description": "This example shows how to get the latest backup for the specified partition.",
   "parameters": {
-    "api-version": "6.2-preview",
+    "api-version": "16.1-preview",
     "partitionId": "1daae3f5-7fd6-42e9-b1ba-8c05f873994d",
     "Latest": true
   },
@@ -14,8 +14,8 @@
         "ContinuationToken": "",
         "Items": [ 
           {
-            "BackupId": "be06a49c-be67-4eb1-a602-b983605be862",
-            "BackupChainId": "be06a49c-be67-4eb1-a602-b983605be862",
+            "BackupId": "be06a49c-be67-4eb1-a16.1-b983605be862",
+            "BackupChainId": "be06a49c-be67-4eb1-a16.1-b983605be862",
             "ApplicationName": "fabric:/CalcApp",
             "ServiceName": "fabric:/CalcApp/CalcService",
             "PartitionInformation": {

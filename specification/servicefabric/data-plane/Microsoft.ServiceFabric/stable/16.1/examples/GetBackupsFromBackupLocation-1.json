@@ -2,7 +2,7 @@
   "operationId": "GetBackupsFromBackupLocation",
   "description": "This example shows how to get list of application backups from a specified backup location. The number of results in a page are limited to maximum of two using the MaxResult parameter.",
   "parameters": {
-    "api-version": "6.2-preview",
+    "api-version": "16.1-preview",
     "MaxResults": 2,
     "GetBackupByStorageQueryDescription": {
       "Storage": {

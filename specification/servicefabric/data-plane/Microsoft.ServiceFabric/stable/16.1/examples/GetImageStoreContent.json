@@ -2,7 +2,7 @@
   "operationId": "GetImageStoreContent",
   "description": "This example shows how to get image store content under the given relative path.",
   "parameters": {
-    "api-version": "6.2",
+    "api-version": "16.1",
     "contentPath": "Store\\CalcServiceApp"
   },
   "responses": {

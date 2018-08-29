@@ -2,7 +2,7 @@
   "operationId": "GetChaosEvents",
   "description": "This example shows how to get Chaos events in a single response message without the need for paging through ContinuationToken parameter.",
   "parameters": {
-    "api-version": "6.2",
+    "api-version": "16.1",
     "StartTimeUtc": "0",
     "EndTimeUtc": "3155378975999999999"
   },
@@ -50,7 +50,7 @@
               "Kind": "ExecutingFaults",
               "TimeStampUtc": "2017-04-14T04:27:20.667Z",
               "Faults": [
-                "ActionType: RestartReplica, ServiceUri: fabric:/TestApp1/PersistServ_6R_1, PartitionId: 6a91b09a-bd76-45da-afaa-ed0fd9bfe7d2, ReplicaId: 131366172775684622",
+                "ActionType: RestartReplica, ServiceUri: fabric:/TestApp1/PersistServ_6R_1, PartitionId: 6a91b09a-bd76-45da-afaa-ed0fd9bfe7d2, ReplicaId: 13136617277568416.1",
                 "ActionType: CodePackageRestart, NodeName: N0050, ApplicationName: fabric:/TestApp1, ServiceManifestName: SP1, ServiceManifestName: , CodePackageName: CP1.",
                 "ActionType: RestartReplica, ServiceUri: fabric:/TestApp1/PersistServ_6R_3, PartitionId: baa3a51e-5c42-435e-89d3-6e97b2164661, ReplicaId: 131366172988968762"
               ]

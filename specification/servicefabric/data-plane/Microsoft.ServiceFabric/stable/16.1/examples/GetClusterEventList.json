@@ -2,7 +2,7 @@
   "operationId": "GetClusterEventList",
   "description": "This example shows how to get all cluster-related events during a certain time window.",
   "parameters": {
-    "api-version": "6.2-preview",
+    "api-version": "16.1-preview",
     "StartTimeUtc": "2018-04-03T18:00:00Z",
     "EndTimeUtc": "2018-04-04T18:00:00Z"
   },
@@ -14,7 +14,7 @@
         {
           "Kind": "ClusterUpgradeStart",
           "CurrentClusterVersion": "0.0.0.0:",
-          "TargetClusterVersion": "6.2:1.0",
+          "TargetClusterVersion": "16.1:1.0",
           "UpgradeType": "Rolling",
           "RollingUpgradeMode": "UnmonitoredAuto",
           "FailureAction": "Manual",
@@ -24,7 +24,7 @@
         },
         {
           "Kind": "ClusterUpgradeDomainComplete",
-          "TargetClusterVersion": "6.2:1.0",
+          "TargetClusterVersion": "16.1:1.0",
           "UpgradeState": "RollingForward",
           "UpgradeDomains": "(0 1 2)",
           "UpgradeDomainElapsedTimeInMs": 78.5288,
@@ -34,7 +34,7 @@
         },
         {
           "Kind": "ClusterUpgradeDomainComplete",
-          "TargetClusterVersion": "6.2:1.0",
+          "TargetClusterVersion": "16.1:1.0",
           "UpgradeState": "RollingForward",
           "UpgradeDomains": "(3 4)",
           "UpgradeDomainElapsedTimeInMs": 0.0,
@@ -44,7 +44,7 @@
         },
         {
           "Kind": "ClusterUpgradeComplete",
-          "TargetClusterVersion": "6.2:1.0",
+          "TargetClusterVersion": "16.1:1.0",
           "OverallUpgradeElapsedTimeInMs": 120196.5212,
           "EventInstanceId": "090add3c-8f56-4d35-8d57-a855745b6064",
           "TimeStamp": "2018-04-03T20:20:59.8134457Z",

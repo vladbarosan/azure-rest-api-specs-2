@@ -2,7 +2,7 @@
   "operationId": "GetBackupPolicyByName",
   "description": "This example shows how to query a backup policy by name.",
   "parameters": {
-    "api-version": "6.2-preview",
+    "api-version": "16.1-preview",
     "backupPolicyName": "DailyAzureBackupPolicy"
   },
   "responses": {

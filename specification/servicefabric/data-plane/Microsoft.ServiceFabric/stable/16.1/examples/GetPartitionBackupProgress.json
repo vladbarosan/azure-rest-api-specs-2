@@ -3,7 +3,7 @@
   "description": "This shows an example of possible output when GetPartitionBackupProgress has reached a BackupState of Success.  If the BackupState has a value of BackupInProgress, only the BackupState field will have a value.",
   "parameters": {
     "partitionId": "1daae3f5-7fd6-42e9-b1ba-8c05f873994d",
-    "api-version": "6.2-preview"
+    "api-version": "16.1-preview"
   },
   "responses": {
     "200": {

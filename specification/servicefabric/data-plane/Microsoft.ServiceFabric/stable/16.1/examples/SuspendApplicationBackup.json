@@ -2,7 +2,7 @@
   "operationId": "SuspendApplicationBackup",
   "description": "This example shows how to suspend backup for a stateful application which is configured for periodic backup.",
   "parameters": {
-    "api-version": "6.2-preview",
+    "api-version": "16.1-preview",
     "applicationId": "CalcApp"
   },
   "responses": {

@@ -2,7 +2,7 @@
   "operationId": "GetContainerLogsDeployedOnNode",
   "description": "This example shows how to get container logs for container deployed on a Service Fabric node for the given code package.",
   "parameters": {
-    "api-version": "6.2",
+    "api-version": "16.1",
     "nodeName": "_Node_0",
     "applicationId": "SimpleHttpServerApp",
     "ServiceManifestName": "SimpleHttpServerSvcPkg",

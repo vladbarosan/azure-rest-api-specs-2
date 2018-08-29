@@ -2,7 +2,7 @@
   "operationId": "DisableServiceBackup",
   "description": "This example shows how to disable periodic backup for a stateful service which was previously enabled.",
   "parameters": {
-    "api-version": "6.2-preview",
+    "api-version": "16.1-preview",
     "serviceId": "CalcApp/CalcService"
   },
   "responses": {

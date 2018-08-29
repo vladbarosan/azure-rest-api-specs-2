@@ -2,7 +2,7 @@
   "operationId": "GetPartitionBackupList",
   "description": "This example shows how to get list of partition backups within a time range.",
   "parameters": {
-    "api-version": "6.2-preview",
+    "api-version": "16.1-preview",
     "partitionId": "1daae3f5-7fd6-42e9-b1ba-8c05f873994d",
     "StartDateTimeFilter": "2018-01-01T00:00:00Z",
     "EndDateTimeFilter": "2018-01-01T23:59:59Z"

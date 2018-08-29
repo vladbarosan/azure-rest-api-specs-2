@@ -2,7 +2,7 @@
   "operationId": "GetApplicationBackupList",
   "description": "This example shows how to get the latest backup for each partition within an application.",
   "parameters": {
-    "api-version": "6.2-preview",
+    "api-version": "16.1-preview",
     "applicationId": "CalcApp",
     "Latest": true
   },

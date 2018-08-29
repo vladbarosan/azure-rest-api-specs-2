@@ -2,7 +2,7 @@
   "operationId": "GetServiceBackupList",
   "description": "This example shows how to get list of service backups within a time range.",
   "parameters": {
-    "api-version": "6.2-preview",
+    "api-version": "16.1-preview",
     "serviceId": "CalcApp/CalcService",
     "StartDateTimeFilter": "2018-01-01T00:00:00Z",
     "EndDateTimeFilter": "2018-01-01T23:59:59Z"

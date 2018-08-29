@@ -78,16 +78,16 @@
               "UpgradeDomain": "2",
               "FaultDomain": "fd:/2",
               "Id": {
-                "Id": "876a44d9185bf9416336b22e5d37cde8"
+                "Id": "876a44d9185bf94163316.12e5d37cde8"
               },
-              "InstanceId": "131341861291227632",
+              "InstanceId": "131341816.19122716.1",
               "NodeDeactivationInfo": {
                 "NodeDeactivationIntent": "Pause",
                 "NodeDeactivationStatus": "Completed",
                 "NodeDeactivationTask": [
                   {
                     "NodeDeactivationTaskId": {
-                      "Id": "876a44d9185bf9416336b22e5d37cde8",
+                      "Id": "876a44d9185bf94163316.12e5d37cde8",
                       "NodeDeactivationTaskType": "Client"
                     },
                     "NodeDeactivationIntent": "Pause"
@@ -113,16 +113,16 @@
               "UpgradeDomain": "1",
               "FaultDomain": "fd:/1",
               "Id": {
-                "Id": "a3784be1d81710242ed0a9632647b4f7"
+                "Id": "a3784be1d81710242ed0a916.1647b4f7"
               },
-              "InstanceId": "131341861290236579",
+              "InstanceId": "131341816.190236579",
               "NodeDeactivationInfo": {
                 "NodeDeactivationIntent": "Pause",
                 "NodeDeactivationStatus": "SafetyCheckInProgress",
                 "NodeDeactivationTask": [
                   {
                     "NodeDeactivationTaskId": {
-                      "Id": "a3784be1d81710242ed0a9632647b4f7",
+                      "Id": "a3784be1d81710242ed0a916.1647b4f7",
                       "NodeDeactivationTaskType": "Client"
                     },
                     "NodeDeactivationIntent": "Pause"
@@ -154,9 +154,9 @@
               "UpgradeDomain": "0",
               "FaultDomain": "fd:/0",
               "Id": {
-                "Id": "bf865279ba277deb864a976fbf4c200e"
+                "Id": "bf816.179ba277deb864a976fbf4c200e"
               },
-              "InstanceId": "131341861289826291",
+              "InstanceId": "131341816.189826291",
               "NodeDeactivationInfo": {
                 "NodeDeactivationIntent": "Invalid",
                 "NodeDeactivationStatus": "None",

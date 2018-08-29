@@ -3,7 +3,7 @@
   "description": "This example shows how to get all application-related events during a certain time window.",
   "parameters": {
     "applicationId": "app1",
-    "api-version": "6.2-preview",
+    "api-version": "16.1-preview",
     "StartTimeUtc": "2018-04-03T18:00:00Z",
     "EndTimeUtc": "2018-04-04T18:00:00Z"
   },

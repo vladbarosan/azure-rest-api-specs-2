@@ -2,7 +2,7 @@
   "operationId": "GetServiceBackupList",
   "description": "This example shows how to get the latest backup for each partition within a service.",
   "parameters": {
-    "api-version": "6.2-preview",
+    "api-version": "16.1-preview",
     "serviceId": "CalcApp/CalcService",
     "Latest": true
   },
