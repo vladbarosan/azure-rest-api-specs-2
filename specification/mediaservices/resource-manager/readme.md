@@ -252,4 +252,8 @@ directive:
     from: media.json
     where: '$.definitions["generated.nested.definitions.Resource.properties.tags"]'
     reason: 'cx x '
+  - suppress: INVALID_TYPE
+    from: media.json
+    where: '$.definitions["generated.nested.definitions.Resource.properties.tags"]'
+    reason: '  xbbx'
 ```
