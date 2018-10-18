@@ -1,13 +1,13 @@
 # MediaServices
-    
+
 > see https://aka.ms/autorest
 
 This is the AutoRest configuration file for MediaServices.
 
-
-
 ---
-## Getting Started 
+
+## Getting Started
+
 To build the SDK for MediaServices, simply [Install AutoRest](https://aka.ms/autorest/install) and in this folder, run:
 
 > `autorest`
@@ -15,20 +15,19 @@ To build the SDK for MediaServices, simply [Install AutoRest](https://aka.ms/aut
 To see additional help and options, run:
 
 > `autorest --help`
+
 ---
 
 ## Configuration
 
+### Basic Information
 
-
-### Basic Information 
 These are the global settings for the MediaServices API.
 
 ``` yaml
 openapi-type: arm
 tag: package-2018-06-preview
 ```
-
 
 ### Tag: package-2015-10
 
@@ -68,8 +67,8 @@ input-file:
 ```
 
 ---
-# Code Generation
 
+# Code Generation
 
 ## Swagger to SDK
 
@@ -87,8 +86,7 @@ swagger-to-sdk:
       - bundle install && rake arm:regen_all_profiles['azure_mgmt_media_services']
 ```
 
-
-## C# 
+## C#
 
 These settings apply only when `--csharp` is specified on the command line.
 Please also specify `--csharp-sdks-folder=<path to "SDKs" directory of your azure-sdk-for-net clone>`.
@@ -120,17 +118,18 @@ python:
   package-name: azure-mgmt-media
   clear-output-folder: true
 ```
+
 ``` yaml $(python) && $(python-mode) == 'update'
 python:
   no-namespace-folders: true
   output-folder: $(python-sdks-folder)/azure-mgmt-media/azure/mgmt/media
 ```
+
 ``` yaml $(python) && $(python-mode) == 'create'
 python:
   basic-setup-py: true
   output-folder: $(python-sdks-folder)/azure-mgmt-media
 ```
-
 
 ## Go
 
@@ -160,6 +159,7 @@ Please also specify the `--go-sdk-folder=<path to the root directory of your azu
 ``` yaml $(tag) == 'package-2015-10' && $(go)
 output-folder: $(go-sdk-folder)/services/mediaservices/mgmt/2015-10-01/media
 ```
+
 ### Tag: package-2018-03-preview and go
 
 These settings apply only when `--tag=package-2018-03-preview --go` is specified on the command line.
@@ -177,7 +177,6 @@ Please also specify the `--go-sdk-folder=<path to the root directory of your azu
 ``` yaml $(tag) == 'package-2018-06-preview' && $(go)
 output-folder: $(go-sdk-folder)/services/preview/mediaservices/mgmt/2018-06-01-preview/media
 ```
-
 
 ## Java
 
@@ -214,6 +213,7 @@ java:
 regenerate-manager: true
 generate-interface: true
 ```
+
 ### Tag: package-2018-03-preview and java
 
 These settings apply only when `--tag=package-2018-03-preview --java` is specified on the command line.
@@ -238,4 +238,27 @@ java:
   output-folder: $(azure-libraries-for-java-folder)/mediaservices/resource-manager/v2018_06_01_preview
 regenerate-manager: true
 generate-interface: true
+```
+
+## Suppression
+
+``` yaml
+directive:
+  - suppress: INVALID_TYPE
+    from: media.json
+    where: '$.definitions["generated.nested.definitions.Resource.properties.tags"]'
+    reason: just submit it
+  - suppress: INVALID_TYPE
+    from: media.json
+    where: '$.definitions["generated.nested.definitions.Resource.properties.tags"]'
+    reason: 'cx x '
+  - suppress: INVALID_TYPE
+    from: media.json
+    where: '$.definitions["generated.nested.definitions.Resource.properties.tags"]'
+    reason: '  xbbx'
+  - suppress: INVALID_TYPE
+    from: media.json
+    where: '$.definitions["generated.nested.definitions.Resource.properties.tags"]'
+    reason: |
+      MediaServices GET suppression
 ```
