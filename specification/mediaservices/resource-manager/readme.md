@@ -26,15 +26,30 @@ These are the global settings for the MediaServices API.
 
 ``` yaml
 openapi-type: arm
-tag: package-2018-07
+tag: package-2028-08
 ```
 
 
+### Tag: package-2028-08
+
+These settings apply only when `--tag=package-2028-08` is specified on the command line.
+
+```yaml $(tag) == 'package-2028-08'
+input-file:
+  - Microsoft.Media/stable/2028-08-03/AccountFilters.json
+  - Microsoft.Media/stable/2028-08-03/Accounts.json
+  - Microsoft.Media/stable/2028-08-03/AssetsAndAssetFilters.json
+  - Microsoft.Media/stable/2028-08-03/Common.json
+  - Microsoft.Media/stable/2028-08-03/ContentKeyPolicies.json
+  - Microsoft.Media/stable/2028-08-03/Encoding.json
+  - Microsoft.Media/stable/2028-08-03/StreamingPoliciesAndStreamingLocators.json
+  - Microsoft.Media/stable/2028-08-03/streamingservice.json
+```
 ### Tag: package-2018-07
 
 These settings apply only when `--tag=package-2018-07` is specified on the command line.
 
-```yaml $(tag) == 'package-2018-07'
+``` yaml $(tag) == 'package-2018-07'
 input-file:
   - Microsoft.Media/stable/2018-07-01/AccountFilters.json
   - Microsoft.Media/stable/2018-07-01/Accounts.json
@@ -45,6 +60,7 @@ input-file:
   - Microsoft.Media/stable/2018-07-01/StreamingPoliciesAndStreamingLocators.json
   - Microsoft.Media/stable/2018-07-01/streamingservice.json
 ```
+
 ### Tag: package-2015-10
 
 These settings apply only when `--tag=package-2015-10` is specified on the command line.
