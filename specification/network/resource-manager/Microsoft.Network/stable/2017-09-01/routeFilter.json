@@ -87,7 +87,7 @@
                 "x-ms-examples": {
                     "RouteFilterGet": { "$ref": "./examples/RouteFilterGet.json" }
                 },
-                "description": "Gets the specified route filter.",
+                "description": "Gets the specified route filter bla.",
                 "parameters": [
                     {
                         "name": "resourceGroupName",
