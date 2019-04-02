@@ -1,0 +1,18 @@
+{
+  "parameters": {
+    "accountName": "sampleacct",
+    "resourceGroupName": "InkRecognizerClient",
+    "api-version": "2.5",
+    "subscriptionId": "subid"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "sampleacct",
+        "location": "uswest",
+        "id": "/subscriptions/subid/resourceGroups/InkRecognizerClient/providers/Microsoft.CognitiveServices/batchAccounts/sampleacct",
+        "type": "Microsoft.CognitiveServices/InkRecognizer"
+      }
+    }
+  }
+}
