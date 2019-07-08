@@ -4,10 +4,10 @@
 
 This is the AutoRest configuration file for ApplicationInsights.
 
-
-
 ---
+
 ## Getting Started
+
 To build the SDK for ApplicationInsights, simply [Install AutoRest](https://aka.ms/autorest/install) and in this folder, run:
 
 > `autorest`
@@ -15,23 +15,24 @@ To build the SDK for ApplicationInsights, simply [Install AutoRest](https://aka.
 To see additional help and options, run:
 
 > `autorest --help`
+
 ---
 
 ## Configuration
 
-
-
 ### Basic Information
+
 These are the global settings for the ApplicationInsights API.
 
 ``` yaml
 title: ApplicationInsightsManagementClient
 description: Composite Swagger for Application Insights Management Client
 openapi-type: arm
-tag: package-2015-05
+tag: package-2020-06
 ```
 
 ## Suppression
+
 ``` yaml
 directive:
   - suppress: LongRunningOperationsWithLongRunningExtension
@@ -237,6 +238,15 @@ directive:
     reason: There are a bug in this rule. "ExportConfigurations_Create" is a valid operation id.
 ```
 
+
+### Tag: package-2020-06
+
+These settings apply only when `--tag=package-2020-06` is specified on the command line.
+
+```yaml $(tag) == 'package-2020-06'
+input-file:
+  - Microsoft.Insights/stable/2020-06-22/componentProactiveDetection_API.json
+```
 ### Tag: package-2015-05
 
 These settings apply only when `--tag=package-2015-05` is specified on the command line.
@@ -285,9 +295,10 @@ These settings apply only when `--tag=package-2018-05-01-preview` is specified o
 input-file:
 - Microsoft.Insights/preview/2018-05-01/componentProactiveDetection_API.json
 ```
----
-# Code Generation
 
+---
+
+# Code Generation
 
 ## Swagger to SDK
 
